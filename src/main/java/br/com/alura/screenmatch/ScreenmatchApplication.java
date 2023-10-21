@@ -9,6 +9,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import br.com.alura.screenmatch.principal.Principal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +18,6 @@ public class ScreenmatchApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ScreenmatchApplication.class, args);
-
 	}
 
 	@Override
@@ -51,5 +51,7 @@ public class ScreenmatchApplication implements CommandLineRunner {
 		}
 
 		temporadas.forEach(System.out::println);
+		Principal principal = new Principal();
+		principal.exibeMenu();
 	}
 }
