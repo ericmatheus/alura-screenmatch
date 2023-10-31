@@ -32,7 +32,7 @@ public class Principal {
 			json = consumoAPI.obterDados(apiUrl);
 			DadosTemporada dadosTemporada = conversor.obterDados(json, DadosTemporada.class);
 			temporadas.add(dadosTemporada);
-		}
+		}//
 		temporadas.forEach(System.out::println);
     }
 
